@@ -1,0 +1,113 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Ako",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#assignments" },
+		{ "include": "#operators" },
+		{ "include": "#keywords" },
+		{ "include": "#constants" },
+		{ "include": "#metadata" },
+		{ "include": "#punctuations" },
+		{ "include": "#numbers" },
+		{ "include": "#sq-strings" },
+		{ "include": "#dq-strings" }
+	],
+	"repository": {
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.line.ako",
+					"match": "//.*"
+				},
+				{
+					"name": "comment.line.ako",
+					"match": "##.*"
+				}
+			]
+		},
+		"assignments": {
+			"patterns": [
+				{
+					"name": "variable.parameter.ako",
+					"match": "\\w* = "
+				}
+			]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.ako",
+				"match": "\\b(if|elif|else|task|in|for|continue|return)\\b"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "constant.language.ako",
+				"match": "\\b(true|false|''|\"\")\\b"
+			}]
+		},
+		"operators": {
+			"patterns": [{
+				"name": "keyword.operator.ako",
+				"match": "\\b(or|and|=)\\b"
+			}]
+		},
+		"metadata": {
+			"patterns": [{
+				"name": "comment.line.number-sign.ako",
+				"match": "\\b##.*\\b"
+			}]
+		},
+		"punctuations": {
+			"patterns": [
+				{
+					"name": "punctuation.separator.colon.ako",
+					"match": ":"
+				},
+				{
+					"name": "punctuation.separator.element.ako",
+					"match": ","
+				},
+				{
+					"name": "storage.modifier.ako",
+					"match": "@@(\\w|\\.)*"
+				},
+				{
+					"name": "support.function.ako",
+					"match": "@(\\w|\\.)*"
+				}
+			]
+		},
+		"sq-strings": {
+			"name": "string.quoted.single.ako",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ako",
+					"match": "\\\\."
+				}
+			]
+		},
+		"dq-strings": {
+			"name": "string.quoted.double.ako",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ako",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [
+				{
+					"name": "constant.numeric.ako",
+					"match": "\\d"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ako"
+}

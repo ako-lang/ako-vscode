@@ -1,0 +1,26 @@
+{
+    "name": "ako-vscode",
+    "displayName": "Ako",
+    "description": "Syntax highlighting for Ako lang",
+    "version": "0.0.1",
+    "publisher": "kefniark",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ako",
+            "aliases": ["Ako", "ako"],
+            "extensions": [".ako"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ako",
+            "scopeName": "source.ako",
+            "path": "./syntaxes/ako.tmLanguage.json"
+        }]
+    }
+}
