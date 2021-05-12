@@ -1,9 +1,9 @@
 # VSCode - Ako Language Extension
 
-![Logo](./logo.png)
+![Logo](https://raw.githubusercontent.com/ako-lang/ako/master/logo.png)
 
 ## Features
-* Provide a basic textmate syntax for basic highlighting of Ako Language
+* Provide a basic syntax highlighting for the Ako Language
 
 ## Marketplace
 
