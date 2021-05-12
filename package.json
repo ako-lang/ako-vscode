@@ -1,8 +1,9 @@
 {
     "name": "ako-vscode",
-    "displayName": "Ako",
+    "displayName": "Ako Lang",
     "description": "Syntax highlighting for Ako lang",
-    "version": "0.0.1",
+    "icon": "icon.png",
+    "version": "0.0.3",
     "publisher": "kefniark",
     "engines": {
         "vscode": "^1.56.0"
@@ -10,11 +11,27 @@
     "categories": [
         "Programming Languages"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ako-lang/ako-vscode"
+    },
+    "keywords": [
+        "Programming Languages",
+        "Ako",
+        "Syntax"
+    ],
+    "author": {
+        "name": "Kevin destrem",
+        "email": "kef1@free.fr"
+    },
+    "homepage": "https://ako-lang.github.io/ako/index.html#/",
+    "license": "MIT",
     "contributes": {
         "languages": [{
             "id": "ako",
             "aliases": ["Ako", "ako"],
             "extensions": [".ako"],
+            "icon": "cake",
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
